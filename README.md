@@ -2,7 +2,7 @@
 
 ## Table of Contents
 - [Overview](#overview)
-[Technologies](#technologies)
+- [Technologies](#technologies)
 - [Features](#features)
 - [Setup](#setup)
 
