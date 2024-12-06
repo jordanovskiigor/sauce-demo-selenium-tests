@@ -16,17 +16,18 @@ describe('Login Tests', function() {
   });
 
   loginData.forEach((data) => {
-    it(`should handle login with ${data.username}`, async function() {
+    it(`handle login with ${data.username}`, async function() {
       await driver.get('https://www.saucedemo.com/');
       await loginPage.login(data.username, data.password);
 
-      // Add assertions based on your test scenario
-      // Example: Check for successful login by checking URL
       if (data.username === 'standard_user' && data.password === 'secret_sauce') {
-        // Add assertion for successful login
-      } else {
-        // Add assertion for failure
-      }
+        await driver.wait(until.elementLocated(By.id('inventory_container')), 5000); // Example for verifying successful login
+        const pageTitle = await driver.getTitle();
+        assert.equal(pageTitle, 'Swag Labs');
+    } else {
+        const errorMessage = await driver.findElement(By.xpath('//h3[@data-test="error"]')).getText();
+        assert.include(errorMessage, 'Epic sadface');
+    }
     });
   });
 });
