@@ -21,7 +21,7 @@ describe('Login Tests', function() {
       await loginPage.login(data.username, data.password);
 
       if (data.username === 'standard_user' && data.password === 'secret_sauce') {
-        await driver.wait(until.elementLocated(By.id('inventory_container')), 5000); // Example for verifying successful login
+        await driver.wait(until.elementLocated(By.id('inventory_container')), 5000);
         const pageTitle = await driver.getTitle();
         assert.equal(pageTitle, 'Swag Labs');
     } else {
