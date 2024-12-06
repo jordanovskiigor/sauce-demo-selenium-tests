@@ -14,7 +14,7 @@ This project automates end-to-end workflows for [Sauce Demo](https://www.saucede
 	•	Selenium WebDriver: For browser automation.
 	•	Node.js: JavaScript runtime for the project.
 	•	Mocha: Test framework for organizing and running tests.
-	•	Chai (optional): Assertion library for verifying test results.
+	•	Chai: Assertion library for verifying test results.
 	•	JSON: For data-driven testing.
  
 ## Features
