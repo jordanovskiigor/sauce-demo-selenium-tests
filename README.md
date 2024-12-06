@@ -9,7 +9,7 @@
 ## Overview
 This project automates end-to-end workflows for [Sauce Demo](https://www.saucedemo.com/) using Selenium WebDriver and Node.js. It follows the Page Object Model (POM) for scalability and includes features such as data-driven testing and reusable components.
 
-## Technologies Used
+## Technologies
 
 	•	Selenium WebDriver: For browser automation.
 	•	Node.js: JavaScript runtime for the project.
