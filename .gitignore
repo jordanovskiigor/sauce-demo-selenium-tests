@@ -1,0 +1,21 @@
+# Node.js modules
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Operating system files
+.DS_Store
+
+# Test reports and screenshots
+reports/
+reports/screenshots/
+
+# Environment files
+.env
+
+# Editor-specific files
+.vscode/
+.idea/
+*.swp
